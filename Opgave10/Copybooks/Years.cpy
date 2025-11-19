@@ -1,0 +1,5 @@
+       77  START-AAR          PIC 9(4) VALUE 2020.
+       77  SLUT-AAR           PIC 9(4) VALUE 2026.
+       77  CURRENT-AAR        PIC 9(4) VALUE 0.
+       77  CURRENT-AAR-CHAR   PIC X(4) VALUE SPACES.
+       77  AAR-FRA-DATO       PIC X(4) VALUE SPACES.

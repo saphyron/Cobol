@@ -68,6 +68,8 @@
            formater-navne.
                move spaces to Rens-Fuld-Navn
                move 1 to pos
+               display Fornavn
+               display Efternavn
                string "Person-Navn: "        delimited by size
                function TRIM(Fornavn)        delimited by size 
                " "                           delimited by size 

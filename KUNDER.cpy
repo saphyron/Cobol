@@ -1,6 +1,6 @@
            02 Kunde-Id          pic x(10)    value spaces.
            02 Person-Navn.
-               03 Fuld-Navn     pic x(60)    value spaces.
+               03 Fuld-Navn     pic x(40)    value spaces.
                03 Fornavn       pic x(20)    value spaces.
                03 Efternavn     pic x(20)    value spaces.
            02 Konto-Information.   
