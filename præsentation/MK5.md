@@ -168,6 +168,24 @@ flowchart TD
     LOOP --> END["STOP RUN"]
 ```
 
+```mermaid
+flowchart LR
+    S["START"]
+    O1["OPEN output"]
+    LOOP["For hvert år (start-aar → slut-aar)"]
+    BT["Byg konto-tabel for året"]
+    CHK{"ANTAL-KONTI > 0?"}
+    GEN["Generér kontoudskrifter"]
+    SKIP["Ingen transaktioner for året"]
+    END["STOP RUN"]
+
+    S --> O1 --> LOOP --> BT --> CHK
+    CHK -->|Ja| GEN --> LOOP
+    CHK -->|Nej| SKIP --> LOOP
+    LOOP -->|Når sidste år er behandlet| END
+
+```
+
 ---
 
 # **📄 Slide 7 — Valuta-konvertering (teknisk udfordring)**
